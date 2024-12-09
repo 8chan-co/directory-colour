@@ -1,0 +1,19 @@
+{
+    "name": "com.ophura.directory-tint",
+    "displayName": "Directory Tint",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "keywords": [
+        "editor",
+        "folder",
+        "directory",
+        "customization",
+        "colorization",
+        "tools"
+    ],
+    "description": "Use Directory Tint to create colorize folders.",
+    "repository": {
+        "url": "https://github.com/8chan-co/com.ophura.directory-tint.git",
+        "type": "git"
+    }
+}
