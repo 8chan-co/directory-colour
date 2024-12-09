@@ -11,7 +11,7 @@
         "colorization",
         "tools"
     ],
-    "description": "Use Directory Tint to create colorize folders.",
+    "description": "Use Directory Tint to colorize folders.",
     "repository": {
         "url": "https://github.com/8chan-co/com.ophura.directory-tint.git",
         "type": "git"
