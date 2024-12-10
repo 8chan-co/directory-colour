@@ -13,7 +13,7 @@
     ],
     "description": "Use Directory Tint to colorize folders.",
     "repository": {
-        "url": "https://github.com/8chan-co/com.ophura.directory-tint.git",
+        "url": "https://github.com/8chan-co/directory-tint.git",
         "type": "git"
     }
 }
