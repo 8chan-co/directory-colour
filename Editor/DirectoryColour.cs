@@ -20,7 +20,7 @@ namespace Ophura
 
             if (RepresentsCompatibleDirectory(Pathname) is false) return;
 
-            if (ColourStorage.instance.AttemptObtaintion(Pathname, out Color Colour) is false) return;
+            if (ColourStorage.Singular.AttemptObtention(Pathname, out Color Colour) is false) return;
 
             // TODO: Use the provided colour, otherwise; nothing will be drawn.
 
@@ -71,8 +71,8 @@ namespace Ophura
         {
             string Identifier = SelectedDirectoryPathname;
 
-            Color InitialColour = ColourStorage.instance.Incorporates(Identifier)
-                ? ColourStorage.instance[Identifier]
+            Color InitialColour = ColourStorage.Singular.Incorporates(Identifier)
+                ? ColourStorage.Singular[Identifier]
                 : Consistent.PureDirectoryColour;
 
             ColourSelector.Show(Operation: ColourMutationApplication, InitialColour);
@@ -82,9 +82,9 @@ namespace Ophura
         {
             string Identifier = SelectedDirectoryPathname;
 
-            if (ColourStorage.instance.Incorporates(Identifier))
-                ColourStorage.instance[Identifier] = Colour;
-            else ColourStorage.instance.Affix(Identifier, Colour);
+            if (ColourStorage.Singular.Incorporates(Identifier))
+                ColourStorage.Singular[Identifier] = Colour;
+            else ColourStorage.Singular.Affix(Identifier, Colour);
 
             EditorApplication.RepaintProjectWindow();
             EffectiveDirectories.Refresh();
@@ -95,13 +95,13 @@ namespace Ophura
         {
             string Identifier = SelectedDirectoryPathname;
 
-            return RepresentsCompatibleDirectory(Identifier) && ColourStorage.instance.Incorporates(Identifier);
+            return RepresentsCompatibleDirectory(Identifier) && ColourStorage.Singular.Incorporates(Identifier);
         }
 
         [MenuItem(itemName: Consistent.SuppressColourFeature, isValidateFunction: false, priority: Consistent.SuppressColourPrecedence)]
         internal static void SuppressColour()
         {
-            ColourStorage.instance.Eliminate(SelectedDirectoryPathname);
+            ColourStorage.Singular.Eliminate(SelectedDirectoryPathname);
 
             EditorApplication.RepaintProjectWindow();
             EffectiveDirectories.Refresh();
