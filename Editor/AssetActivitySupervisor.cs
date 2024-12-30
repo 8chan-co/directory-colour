@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace Ophura
 {
-    internal sealed class ProjectMemberActivityMonitoring : AssetModificationProcessor
+    internal sealed class AssetActivitySupervisor : AssetModificationProcessor
     {
         [UsedImplicitly]
         private static AssetDeleteResult OnWillDeleteAsset(string Identifier, RemoveAssetOptions _)
