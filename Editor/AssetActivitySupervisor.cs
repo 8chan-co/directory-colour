@@ -10,9 +10,9 @@ namespace Ophura
         {
             if (DirectoryColour.RepresentsCompatibleDirectory(Identifier))
             {
-                if (ColourStorage.instance.Incorporates(Identifier))
+                if (ColourStorage.Singular.Incorporates(Identifier))
                 {
-                    ColourStorage.instance.Eliminate(Identifier);
+                    ColourStorage.Singular.Eliminate(Identifier);
                     EditorApplication.RepaintProjectWindow();
                 }
             }
@@ -25,9 +25,9 @@ namespace Ophura
         {
             if (DirectoryColour.RepresentsCompatibleDirectory(OriginPathname))
             {
-                if (ColourStorage.instance.Incorporates(OriginPathname))
+                if (ColourStorage.Singular.Incorporates(OriginPathname))
                 {
-                    ColourStorage.instance.InPlaceExchangeIdentifier(OriginPathname, EndpointPathname);
+                    ColourStorage.Singular.InPlaceExchangeIdentifier(OriginPathname, EndpointPathname);
                     EditorApplication.RepaintProjectWindow();
                 }
             }
