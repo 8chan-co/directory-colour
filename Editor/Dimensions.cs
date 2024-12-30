@@ -1,9 +1,11 @@
-﻿using System;
+// DELETE ME!1!
+
+using System;
 using System.Text;
 using UnityEditor;
 using UnityEngine;
 
-namespace Ophélia
+namespace Ophura
 {
     [CustomEditor(typeof(DefaultAsset))]
     internal sealed class Dimensions : Editor
