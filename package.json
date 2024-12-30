@@ -1,6 +1,6 @@
 {
-    "name": "com.ophura.directory-tint",
-    "displayName": "Directory Tint",
+    "name": "com.ophura.directory-colour",
+    "displayName": "Directory Colour",
     "version": "1.0.0",
     "unity": "2022.3",
     "keywords": [
@@ -11,9 +11,9 @@
         "colorization",
         "tools"
     ],
-    "description": "Use Directory Tint to colorize folders.",
+    "description": "use Directory Colour to colourise Unity folders.",
     "repository": {
-        "url": "https://github.com/8chan-co/directory-tint.git",
+        "url": "https://github.com/8chan-co/directory-colour.git",
         "type": "git"
     }
 }
