@@ -29,7 +29,7 @@ namespace Ophura
 
         internal bool Incorporates(string Identifier) => IdentifierSet.Contains(Identifier);
 
-        internal bool AttemptObtaintion(string Identifier, out Color Tinge)
+        internal bool AttemptObtention(string Identifier, out Color Tinge)
         {
             Tinge = default;
 
