@@ -13,6 +13,8 @@ namespace Ophura
         [SerializeField]
         private List<Color> ColourSet = new();
 
+        internal static ColourStorage Singular => instance;
+
         internal bool Occupied => IdentifierSet.Count is not 0;
 
         internal Color this[string Identifier]
