@@ -9,7 +9,7 @@ namespace Ophura
         internal const int ContextMicePress = 1;
 
         private const int PrecedenceOrigin = 1200;
-        private const string FeaturesRoot = "Assets/Ophélia/";
+        private const string FeaturesRoot = "Assets/Ophura/";
 
         internal const string EditorPatchingIdentifier = "com.ophura.directory-colour";
         internal const string ColourStoragePathname = "DirectoryColour/ColoursStorage.llama";
